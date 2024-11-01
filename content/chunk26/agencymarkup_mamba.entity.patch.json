@@ -1,45 +1,45 @@
 {
-    "tempHash": "002C46DF770E9CA4",
-    "tbluHash": "00B0C1ACEA23E1F9",
-    "patch": [
-        {
-            "SubEntityOperation": [
-                "9e6dbab5a400cb32",
-                {
-                    "SetFactory": "[assembly:/_pro/design/setpieces/setpieces_agencypickups.template?/setpiece_agencypickup_case_0cm.entitytemplate].pc_entitytype"
-                }
-            ]
-        },
-        {
-            "SubEntityOperation": [
-                "9e6dbab5a400cb32",
-                {
-                    "SetBlueprint": "[assembly:/_pro/design/setpieces/setpieces_agencypickups.template?/setpiece_agencypickup_case_0cm.entitytemplate].pc_entityblueprint"
-                }
-            ]
-        },
-        {
-            "SubEntityOperation": [
-                "9e6dbab5a400cb32",
-                {
-                    "SetPropertyValue": {
-                        "property_name": "m_mTransform",
-                        "value": {
-                            "rotation": {
-                                "x": 0,
-                                "y": 0,
-                                "z": -2.235388922140444
-                            },
-                            "position": {
-                                "x": 16.08392906188965,
-                                "y": 15.240349769592285,
-                                "z": 16.74323081970215
-                            }
-                        }
-                    }
-                }
-            ]
-        }
-    ],
-    "patchVersion": 6
+	"tempHash": "002C46DF770E9CA4",
+	"tbluHash": "00B0C1ACEA23E1F9",
+	"patch": [
+		{
+			"SubEntityOperation": [
+				"9e6dbab5a400cb32",
+				{
+					"SetFactory": "[assembly:/_pro/design/setpieces/setpieces_agencypickups.template?/setpiece_agencypickup_case_0cm.entitytemplate].pc_entitytype"
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"9e6dbab5a400cb32",
+				{
+					"SetBlueprint": "[assembly:/_pro/design/setpieces/setpieces_agencypickups.template?/setpiece_agencypickup_case_0cm.entitytemplate].pc_entityblueprint"
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"9e6dbab5a400cb32",
+				{
+					"SetPropertyValue": {
+						"property_name": "m_mTransform",
+						"value": {
+							"rotation": {
+								"x": 0,
+								"y": 0,
+								"z": -2.235388922140444
+							},
+							"position": {
+								"x": 16.08392906188965,
+								"y": 15.240349769592285,
+								"z": 16.74323081970215
+							}
+						}
+					}
+				}
+			]
+		}
+	],
+	"patchVersion": 6
 }

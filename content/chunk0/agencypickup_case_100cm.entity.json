@@ -1,857 +1,788 @@
 {
-    "tempHash": "00FC92CFE8739DAF",
-    "tbluHash": "003F302AD2595DF1",
-    "rootEntity": "bce5d8d99ef6c06b",
-    "entities": {
-        "72091b7500230b1b": {
-            "parent": "bce5d8d99ef6c06b",
-            "name": "FlightCase_G",
-            "factory": "[assembly:/templates/aspectdummy.aspect]([assembly:/_pro/environment/templates/props/containers/flightcases_a.template?/flightcase_g.entitytemplate].entitytype,[modules:/zspatialsaveaspect.class].entitytype).pc_entitytype",
-            "blueprint": "[assembly:/templates/aspectdummy.aspect]([assembly:/_pro/environment/templates/props/containers/flightcases_a.template?/flightcase_g.entitytemplate].entitytype,[modules:/zspatialsaveaspect.class].entitytype).pc_entityblueprint",
-            "properties": {
-                "m_mTransform": {
-                    "type": "SMatrix43",
-                    "value": {
-                        "rotation": {
-                            "x": 0,
-                            "y": 0,
-                            "z": 0
-                        },
-                        "position": {
-                            "x": 0,
-                            "y": 0,
-                            "z": 1
-                        }
-                    }
-                },
-                "m_bVisible": {
-                    "type": "bool",
-                    "value": true
-                },
-                "m_eRoomBehaviour": {
-                    "type": "ZSpatialEntity.ERoomBehaviour",
-                    "value": "ROOM_DYNAMIC"
-                },
-                "m_eidParent": {
-                    "type": "SEntityTemplateReference",
-                    "value": "bce5d8d99ef6c06b",
-                    "postInit": true
-                }
-            }
-        },
-        "5953e19ac8a25934": {
-            "parent": "bce5d8d99ef6c06b",
-            "name": "Sound_InteractiveProp",
-            "factory": "[assembly:/templates/sound/customsoundtemplates.template?/sound_interactiveprop.entitytemplate].pc_entitytype",
-            "blueprint": "[assembly:/templates/sound/customsoundtemplates.template?/sound_interactiveprop.entitytemplate].pc_entityblueprint",
-            "properties": {
-                "m_mTransform": {
-                    "type": "SMatrix43",
-                    "value": {
-                        "rotation": {
-                            "x": 0,
-                            "y": 0,
-                            "z": 0
-                        },
-                        "position": {
-                            "x": 0,
-                            "y": 0,
-                            "z": 0
-                        }
-                    }
-                },
-                "m_eidParent": {
-                    "type": "SEntityTemplateReference",
-                    "value": "72091b7500230b1b"
-                },
-                "ActivateDevice_SFX_Event": {
-                    "type": "ZRuntimeResourceID",
-                    "value": {
-                        "resource": "003264CEA3BBD341",
-                        "flag": "5F"
-                    }
-                },
-                "UniqueDisactivateDeviceEvent": {
-                    "type": "ZRuntimeResourceID",
-                    "value": {
-                        "resource": "006F47285AD0276C",
-                        "flag": "5F"
-                    }
-                },
-                "m_bOneShotEmitter": {
-                    "type": "bool",
-                    "value": true
-                }
-            }
-        },
-        "1b58e9171b28f419": {
-            "parent": "bce5d8d99ef6c06b",
-            "name": "Item_BoolSpawned",
-            "factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
-            "blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint"
-        },
-        "0f3a7ce16368d5b5": {
-            "parent": "bce5d8d99ef6c06b",
-            "name": "AgencyPickup",
-            "factory": "[modules:/zstashpointentity.class].pc_entitytype",
-            "blueprint": "[modules:/zstashpointentity.class].pc_entityblueprint",
-            "properties": {
-                "m_mTransform": {
-                    "type": "SMatrix43",
-                    "value": {
-                        "rotation": {
-                            "x": 0,
-                            "y": 0,
-                            "z": 0
-                        },
-                        "position": {
-                            "x": 0,
-                            "y": 0,
-                            "z": 1.1150000095367432
-                        }
-                    }
-                },
-                "m_sId": {
-                    "type": "ZGuid",
-                    "value": "a257fab7-3a28-4d6f-8076-7376542177e7"
-                },
-                "m_bAllowItemPickup": {
-                    "type": "bool",
-                    "value": false
-                },
-                "m_bUnlockedByDefault": {
-                    "type": "bool",
-                    "value": false
-                },
-                "m_bHide": {
-                    "type": "bool",
-                    "value": false
-                },
-                "m_rMockClothbundle": {
-                    "type": "SEntityTemplateReference",
-                    "value": "b09dbaf05553014e",
-                    "postInit": true
-                },
-                "m_rBundlePosition": {
-                    "type": "SEntityTemplateReference",
-                    "value": "750a98e70b1b8a57",
-                    "postInit": true
-                },
-                "m_eidParent": {
-                    "type": "SEntityTemplateReference",
-                    "value": "bce5d8d99ef6c06b",
-                    "postInit": true
-                }
-            },
-            "events": {
-                "OnReady": {
-                    "SetEnabled": [
-                        "ebefb241f05b56e1"
-                    ],
-                    "SetVisible": [
-                        "72091b7500230b1b"
-                    ],
-                    "SetInPhysicsWorld": [
-                        "72091b7500230b1b"
-                    ]
-                },
-                "OnItemsSpawned": {
-                    "SetTrue": [
-                        "1b58e9171b28f419"
-                    ]
-                },
-                "OnOutfitSpawned": {
-                    "SetTrue": [
-                        "701ca78476d4a7ba"
-                    ]
-                },
-                "OnPickup": {
-                    "SetFalse": [
-                        "1b58e9171b28f419",
-                        "701ca78476d4a7ba"
-                    ]
-                }
-            }
-        },
-        "b09dbaf05553014e": {
-            "parent": "bce5d8d99ef6c06b",
-            "name": "Outfit_MockClothbundle",
-            "factory": "[assembly:/_pro/design/gamecore/clothbundles.template?/clothbundle_basic.entitytemplate].pc_entitytype",
-            "blueprint": "[assembly:/_pro/design/gamecore/clothbundles.template?/clothbundle_basic.entitytemplate].pc_entityblueprint",
-            "properties": {
-                "m_mTransform": {
-                    "type": "SMatrix43",
-                    "value": {
-                        "rotation": {
-                            "x": 0,
-                            "y": 0,
-                            "z": -90.00000250447808
-                        },
-                        "position": {
-                            "x": 0.1860000044107437,
-                            "y": -0.017999999225139618,
-                            "z": 1.0980000495910645
-                        },
-                        "scale": {
-                            "x": 0.9999999999999999,
-                            "y": 0.9999999999999999,
-                            "z": 1
-                        }
-                    }
-                },
-                "m_eidParent": {
-                    "type": "SEntityTemplateReference",
-                    "value": "bce5d8d99ef6c06b",
-                    "postInit": true
-                }
-            }
-        },
-        "750a98e70b1b8a57": {
-            "parent": "bce5d8d99ef6c06b",
-            "name": "Item_SetPieceHelpers_InteractionSpatialsAndGizmos",
-            "factory": "[assembly:/_pro/design/gamecore/setpiecehelpers.template?/setpiecehelpers_interactionspatialsandgizmos.entitytemplate].pc_entitytype",
-            "blueprint": "[assembly:/_pro/design/gamecore/setpiecehelpers.template?/setpiecehelpers_interactionspatialsandgizmos.entitytemplate].pc_entityblueprint",
-            "properties": {
-                "m_mTransform": {
-                    "type": "SMatrix43",
-                    "value": {
-                        "rotation": {
-                            "x": 0,
-                            "y": 0,
-                            "z": -180
-                        },
-                        "position": {
-                            "x": 0,
-                            "y": -0.8715940117835999,
-                            "z": -1
-                        }
-                    }
-                },
-                "InteractionPoint": {
-                    "type": "SMatrix43",
-                    "value": {
-                        "rotation": {
-                            "x": 0,
-                            "y": 0,
-                            "z": 0
-                        },
-                        "position": {
-                            "x": 0,
-                            "y": -0.6000000238418579,
-                            "z": 1.2000000476837158
-                        }
-                    }
-                },
-                "PromptPoint": {
-                    "type": "SMatrix43",
-                    "value": {
-                        "rotation": {
-                            "x": 0,
-                            "y": 0,
-                            "z": 0
-                        },
-                        "position": {
-                            "x": 0,
-                            "y": 0.03999999910593033,
-                            "z": 0
-                        }
-                    }
-                },
-                "m_eidParent": {
-                    "type": "SEntityTemplateReference",
-                    "value": "72091b7500230b1b"
-                }
-            }
-        },
-        "faf176626fcf57fe": {
-            "parent": "bce5d8d99ef6c06b",
-            "name": "Outfit_Interaction_Subaction",
-            "factory": "[assembly:/_pro/design/gamecore/interactionbase.template?/interaction_subaction.entitytemplate].pc_entitytype",
-            "blueprint": "[assembly:/_pro/design/gamecore/interactionbase.template?/interaction_subaction.entitytemplate].pc_entityblueprint",
-            "properties": {
-                "m_bApplyPromptDescriptionText": {
-                    "type": "bool",
-                    "value": false
-                },
-                "m_sPromptText": {
-                    "type": "ZString",
-                    "value": "Retrieve Items"
-                },
-                "m_sPromptDescriptionText": {
-                    "type": "ZString",
-                    "value": "Agency Case"
-                },
-                "m_Object": {
-                    "type": "SEntityTemplateReference",
-                    "value": "0f3a7ce16368d5b5"
-                },
-                "m_bOverrideInteractionRange": {
-                    "type": "bool",
-                    "value": false
-                },
-                "m_bCanBeOperatedFromAnyAngle": {
-                    "type": "bool",
-                    "value": false
-                },
-                "m_eActionType": {
-                    "type": "EActionType",
-                    "value": "AT_STASHPOINT_PICKUP"
-                },
-                "m_rPromptTextResource": {
-                    "type": "ZRuntimeResourceID",
-                    "value": {
-                        "resource": "[assembly:/localization/hitman6/conversations/ui/pro/setpieces.sweetmenutext?/setpieces_localization_prompt_retrieveitems.sweetline].pc_sweetline",
-                        "flag": "5F"
-                    }
-                },
-                "m_rPromptDescriptionTextResource": {
-                    "type": "ZRuntimeResourceID",
-                    "value": {
-                        "resource": "00915E821EF1997B",
-                        "flag": "5F"
-                    }
-                },
-                "m_RuntimeNetworkResourceID": {
-                    "type": "ZRuntimeResourceID",
-                    "value": {
-                        "resource": "[assembly:/animationnetworks/hitman01/tampering/hm_interact_press_buttons_4_120cm.aln].pc_rtn",
-                        "flag": "5F"
-                    }
-                },
-                "m_rContextObjectSpatial": {
-                    "type": "SEntityTemplateReference",
-                    "value": {
-                        "ref": "750a98e70b1b8a57",
-                        "externalScene": null,
-                        "exposedEntity": "InteractionPointSpatial"
-                    }
-                },
-                "m_bCanBeOperatedWithItemsInHand": {
-                    "type": "bool",
-                    "value": false
-                },
-                "m_rContextLocation": {
-                    "type": "SEntityTemplateReference",
-                    "value": "750a98e70b1b8a57"
-                },
-                "m_aIgnoreCollisionGeom": {
-                    "type": "TArray<SEntityTemplateReference>",
-                    "value": [
-                        "72091b7500230b1b"
-                    ]
-                },
-                "m_aUIHighlightGeom": {
-                    "type": "TArray<SEntityTemplateReference>",
-                    "value": [
-                        "72091b7500230b1b"
-                    ]
-                },
-                "m_ConditionList_Visible": {
-                    "type": "TArray<SEntityTemplateReference>",
-                    "value": [
-                        "701ca78476d4a7ba"
-                    ],
-                    "postInit": true
-                },
-                "m_ConditionList_Usable": {
-                    "type": "TArray<SEntityTemplateReference>",
-                    "value": [
-                        "701ca78476d4a7ba"
-                    ],
-                    "postInit": true
-                }
-            },
-            "events": {
-                "Completed": {
-                    "EquipOutfit": [
-                        "0f3a7ce16368d5b5"
-                    ]
-                },
-                "AnimEvent_Generic00": {
-                    "In": [
-                        "0da0cd2e9832d795"
-                    ],
-                    "Open": [
-                        "72091b7500230b1b"
-                    ]
-                },
-                "Started": {
-                    "EquipOutfitStarted": [
-                        "0f3a7ce16368d5b5"
-                    ],
-                    "Play_Activate_Device_Event": [
-                        "5953e19ac8a25934"
-                    ]
-                }
-            }
-        },
-        "701ca78476d4a7ba": {
-            "parent": "bce5d8d99ef6c06b",
-            "name": "Outfit_BoolSpawned",
-            "factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
-            "blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint"
-        },
-        "93fed3649e338222": {
-            "parent": "bce5d8d99ef6c06b",
-            "name": "ValueBool_Basic",
-            "factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
-            "blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
-            "properties": {
-                "m_bValue": {
-                    "type": "bool",
-                    "value": true
-                }
-            }
-        },
-        "ebefb241f05b56e1": {
-            "parent": "bce5d8d99ef6c06b",
-            "name": "PFObstacle",
-            "factory": "[modules:/zpfobstacleentity.class].pc_entitytype",
-            "blueprint": "[modules:/zpfobstacleentity.class].pc_entityblueprint",
-            "properties": {
-                "m_mTransform": {
-                    "type": "SMatrix43",
-                    "value": {
-                        "rotation": {
-                            "x": 0,
-                            "y": 0,
-                            "z": 0
-                        },
-                        "position": {
-                            "x": 0.007899999618530273,
-                            "y": 0.009406999684870243,
-                            "z": 0.21424600481987
-                        }
-                    }
-                },
-                "m_eidParent": {
-                    "type": "SEntityTemplateReference",
-                    "value": "72091b7500230b1b"
-                },
-                "m_vGlobalSize": {
-                    "type": "SVector3",
-                    "value": {
-                        "x": 1.5508400201797485,
-                        "y": 0.6735479831695557,
-                        "z": 0.57150799036026
-                    }
-                }
-            }
-        },
-        "0da0cd2e9832d795": {
-            "parent": "bce5d8d99ef6c06b",
-            "name": "TimerSimple",
-            "factory": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entitytype",
-            "blueprint": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entityblueprint",
-            "properties": {
-                "Delay time (ms)": {
-                    "type": "int32",
-                    "value": 2000
-                }
-            },
-            "events": {
-                "Out": {
-                    "EquipOutfitEnded": [
-                        "0f3a7ce16368d5b5"
-                    ],
-                    "Play_Unique_Disactivate_Device_Event": [
-                        "5953e19ac8a25934"
-                    ],
-                    "Close": [
-                        "72091b7500230b1b"
-                    ]
-                }
-            }
-        },
-        "841f8e7b4792b843": {
-            "parent": "bce5d8d99ef6c06b",
-            "name": "Item_Interaction_Subaction",
-            "factory": "[assembly:/_pro/design/gamecore/interactionbase.template?/interaction_subaction.entitytemplate].pc_entitytype",
-            "blueprint": "[assembly:/_pro/design/gamecore/interactionbase.template?/interaction_subaction.entitytemplate].pc_entityblueprint",
-            "properties": {
-                "m_rContextLocation": {
-                    "type": "SEntityTemplateReference",
-                    "value": "750a98e70b1b8a57"
-                },
-                "m_bApplyPromptDescriptionText": {
-                    "type": "bool",
-                    "value": false
-                },
-                "m_sPromptText": {
-                    "type": "ZString",
-                    "value": "Retrieve Items"
-                },
-                "m_sPromptDescriptionText": {
-                    "type": "ZString",
-                    "value": "Agency Case"
-                },
-                "m_ConditionList_Usable": {
-                    "type": "TArray<SEntityTemplateReference>",
-                    "value": [
-                        "1b58e9171b28f419"
-                    ]
-                },
-                "m_bOverrideInteractionRange": {
-                    "type": "bool",
-                    "value": false
-                },
-                "m_bCanBeOperatedFromAnyAngle": {
-                    "type": "bool",
-                    "value": false
-                },
-                "m_Object": {
-                    "type": "SEntityTemplateReference",
-                    "value": "0f3a7ce16368d5b5"
-                },
-                "m_eActionType": {
-                    "type": "EActionType",
-                    "value": "AT_STASHPOINT_PICKUP"
-                },
-                "m_rContextObjectSpatial": {
-                    "type": "SEntityTemplateReference",
-                    "value": {
-                        "ref": "750a98e70b1b8a57",
-                        "externalScene": null,
-                        "exposedEntity": "InteractionPointSpatial"
-                    }
-                },
-                "m_rPromptTextResource": {
-                    "type": "ZRuntimeResourceID",
-                    "value": {
-                        "resource": "[assembly:/localization/hitman6/conversations/ui/pro/setpieces.sweetmenutext?/setpieces_localization_prompt_retrieveitems.sweetline].pc_sweetline",
-                        "flag": "5F"
-                    }
-                },
-                "m_rPromptDescriptionTextResource": {
-                    "type": "ZRuntimeResourceID",
-                    "value": {
-                        "resource": "00915E821EF1997B",
-                        "flag": "5F"
-                    }
-                },
-                "m_RuntimeNetworkResourceID": {
-                    "type": "ZRuntimeResourceID",
-                    "value": {
-                        "resource": "[assembly:/animationnetworks/hitman01/tampering/hm_interact_press_buttons_4_120cm.aln].pc_rtn",
-                        "flag": "5F"
-                    }
-                },
-                "m_ConditionList_Visible": {
-                    "type": "TArray<SEntityTemplateReference>",
-                    "value": [
-                        "1b58e9171b28f419"
-                    ]
-                },
-                "m_bCanBeOperatedWithItemsInHand": {
-                    "type": "bool",
-                    "value": true
-                },
-                "m_aIgnoreCollisionGeom": {
-                    "type": "TArray<SEntityTemplateReference>",
-                    "value": [
-                        "72091b7500230b1b"
-                    ]
-                },
-                "m_aUIHighlightGeom": {
-                    "type": "TArray<SEntityTemplateReference>",
-                    "value": [
-                        "72091b7500230b1b"
-                    ]
-                }
-            },
-            "events": {
-                "Completed": {
-                    "PickupItems": [
-                        "0f3a7ce16368d5b5"
-                    ]
-                },
-                "AnimEvent_Generic00": {
-                    "In": [
-                        "0da0cd2e9832d795"
-                    ],
-                    "Open": [
-                        "72091b7500230b1b"
-                    ]
-                },
-                "Started": {
-                    "Play_Activate_Device_Event": [
-                        "5953e19ac8a25934"
-                    ]
-                }
-            }
-        },
-        "25d604a4222ec568": {
-            "parent": "bce5d8d99ef6c06b",
-            "name": "Outfit_Interaction_MainActionHelper",
-            "factory": "[assembly:/_pro/design/gamecore/interactionbase.template?/interaction_mainactionhelper.entitytemplate].pc_entitytype",
-            "blueprint": "[assembly:/_pro/design/gamecore/interactionbase.template?/interaction_mainactionhelper.entitytemplate].pc_entityblueprint",
-            "properties": {
-                "m_mTransform": {
-                    "type": "SMatrix43",
-                    "value": {
-                        "rotation": {
-                            "x": 0,
-                            "y": 0,
-                            "z": 0
-                        },
-                        "position": {
-                            "x": 0,
-                            "y": 0,
-                            "z": 0
-                        }
-                    }
-                },
-                "m_eidParent": {
-                    "type": "SEntityTemplateReference",
-                    "value": "750a98e70b1b8a57"
-                },
-                "m_aPromptPositions": {
-                    "type": "TArray<SEntityTemplateReference>",
-                    "value": [
-                        {
-                            "ref": "750a98e70b1b8a57",
-                            "externalScene": null,
-                            "exposedEntity": "PromptSpatial"
-                        }
-                    ]
-                },
-                "m_bRequiresHitmanFacing": {
-                    "type": "bool",
-                    "value": false
-                },
-                "m_bWorldAlignPrompt": {
-                    "type": "bool",
-                    "value": true
-                },
-                "m_bWorldAlignRotateHorizontalOnly": {
-                    "type": "bool",
-                    "value": false
-                },
-                "m_aSubactions": {
-                    "type": "TArray<SEntityTemplateReference>",
-                    "value": [
-                        "faf176626fcf57fe"
-                    ]
-                },
-                "m_bVisible": {
-                    "type": "bool",
-                    "value": false
-                },
-                "m_bRequiresHitmanInFront": {
-                    "type": "bool",
-                    "value": true
-                },
-                "m_aIgnoreCollisionGeom": {
-                    "type": "TArray<SEntityTemplateReference>",
-                    "value": [
-                        "72091b7500230b1b"
-                    ]
-                },
-                "m_aUIHighlightGeom": {
-                    "type": "TArray<SEntityTemplateReference>",
-                    "value": [
-                        "72091b7500230b1b"
-                    ]
-                },
-                "GlowActiveConditions": {
-                    "type": "TArray<SEntityTemplateReference>",
-                    "value": [
-                        "93fed3649e338222"
-                    ]
-                }
-            }
-        },
-        "2f0d47619131819c": {
-            "parent": "bce5d8d99ef6c06b",
-            "name": "Item_Interaction_MainActionHelper",
-            "factory": "[assembly:/_pro/design/gamecore/interactionbase.template?/interaction_mainactionhelper.entitytemplate].pc_entitytype",
-            "blueprint": "[assembly:/_pro/design/gamecore/interactionbase.template?/interaction_mainactionhelper.entitytemplate].pc_entityblueprint",
-            "properties": {
-                "m_mTransform": {
-                    "type": "SMatrix43",
-                    "value": {
-                        "rotation": {
-                            "x": 0,
-                            "y": 0,
-                            "z": 0
-                        },
-                        "position": {
-                            "x": 0,
-                            "y": 0,
-                            "z": 0
-                        }
-                    }
-                },
-                "m_aSubactions": {
-                    "type": "TArray<SEntityTemplateReference>",
-                    "value": [
-                        "841f8e7b4792b843"
-                    ]
-                },
-                "m_aPromptPositions": {
-                    "type": "TArray<SEntityTemplateReference>",
-                    "value": [
-                        {
-                            "ref": "750a98e70b1b8a57",
-                            "externalScene": null,
-                            "exposedEntity": "PromptSpatial"
-                        }
-                    ]
-                },
-                "m_bRequiresHitmanFacing": {
-                    "type": "bool",
-                    "value": false
-                },
-                "m_bWorldAlignPrompt": {
-                    "type": "bool",
-                    "value": true
-                },
-                "m_bWorldAlignRotateHorizontalOnly": {
-                    "type": "bool",
-                    "value": false
-                },
-                "m_eidParent": {
-                    "type": "SEntityTemplateReference",
-                    "value": "750a98e70b1b8a57"
-                },
-                "m_bVisible": {
-                    "type": "bool",
-                    "value": false
-                },
-                "m_bRequiresHitmanInFront": {
-                    "type": "bool",
-                    "value": true
-                },
-                "m_aIgnoreCollisionGeom": {
-                    "type": "TArray<SEntityTemplateReference>",
-                    "value": [
-                        "72091b7500230b1b"
-                    ]
-                },
-                "m_aUIHighlightGeom": {
-                    "type": "TArray<SEntityTemplateReference>",
-                    "value": [
-                        "72091b7500230b1b"
-                    ]
-                },
-                "GlowActiveConditions": {
-                    "type": "TArray<SEntityTemplateReference>",
-                    "value": [
-                        "93fed3649e338222"
-                    ]
-                }
-            }
-        },
-        "e8201a318a909db4": {
-            "parent": "bce5d8d99ef6c06b",
-            "name": "LD_MapTracker_Stashpoint",
-            "factory": "[assembly:/templates/ui/maptrackercontrols.template?/ld_maptracker_stashpoint.entitytemplate].pc_entitytype",
-            "blueprint": "[assembly:/templates/ui/maptrackercontrols.template?/ld_maptracker_stashpoint.entitytemplate].pc_entityblueprint",
-            "properties": {
-                "m_mTransform": {
-                    "type": "SMatrix43",
-                    "value": {
-                        "rotation": {
-                            "x": 0,
-                            "y": 0,
-                            "z": 0
-                        },
-                        "position": {
-                            "x": 0,
-                            "y": 0,
-                            "z": 0
-                        }
-                    }
-                },
-                "m_eidParent": {
-                    "type": "SEntityTemplateReference",
-                    "value": "0f3a7ce16368d5b5"
-                },
-                "m_pStashPoint": {
-                    "type": "SEntityTemplateReference",
-                    "value": "0f3a7ce16368d5b5"
-                },
-                "m_pHoverDataProvider": {
-                    "type": "SEntityTemplateReference",
-                    "value": "0f3a7ce16368d5b5"
-                }
-            }
-        },
-        "bce5d8d99ef6c06b": {
-            "parent": null,
-            "name": "SetPiece_AgencyPickup_Case_100cm",
-            "factory": "[modules:/zspatialentity.class].pc_entitytype",
-            "blueprint": "[modules:/zspatialentity.class].pc_entityblueprint",
-            "properties": {
-                "m_mTransform": {
-                    "type": "SMatrix43",
-                    "value": {
-                        "rotation": {
-                            "x": 0,
-                            "y": 0,
-                            "z": 0
-                        },
-                        "position": {
-                            "x": -1.7483010292053223,
-                            "y": 0,
-                            "z": 0
-                        }
-                    }
-                },
-                "m_eRoomBehaviour": {
-                    "type": "ZSpatialEntity.ERoomBehaviour",
-                    "value": "ROOM_DYNAMIC"
-                },
-                "m_sId": {
-                    "type": "ZGuid",
-                    "value": "a257fab7-3a28-4d6f-8076-7376542177e7"
-                }
-            },
-            "propertyAliases": {
-                "Map_Marker_Offset": [
-                    {
-                        "originalProperty": "m_mTransform",
-                        "originalEntity": "e8201a318a909db4"
-                    }
-                ],
-                "m_bHide": [
-                    {
-                        "originalProperty": "m_bHide",
-                        "originalEntity": "0f3a7ce16368d5b5"
-                    }
-                ],
-                "m_bOneShotEmitter": [
-                    {
-                        "originalProperty": "m_bOneShotEmitter",
-                        "originalEntity": "5953e19ac8a25934"
-                    }
-                ],
-                "m_bUnlockedByDefault": [
-                    {
-                        "originalProperty": "m_bUnlockedByDefault",
-                        "originalEntity": "0f3a7ce16368d5b5"
-                    }
-                ],
-                "m_sId": [
-                    {
-                        "originalProperty": "m_sId",
-                        "originalEntity": "0f3a7ce16368d5b5"
-                    }
-                ]
-            },
-            "exposedInterfaces": {
-                "ZStashPointEntity": "0f3a7ce16368d5b5"
-            }
-        }
-    },
-    "propertyOverrides": [],
-    "overrideDeletes": [],
-    "pinConnectionOverrides": [],
-    "pinConnectionOverrideDeletes": [],
-    "externalScenes": [],
-    "subType": "template",
-    "quickEntityVersion": 3.1,
-    "extraFactoryDependencies": [],
-    "extraBlueprintDependencies": [],
-    "comments": []
+	"tempHash": "00FC92CFE8739DAF",
+	"tbluHash": "003F302AD2595DF1",
+	"rootEntity": "bce5d8d99ef6c06b",
+	"entities": {
+		"72091b7500230b1b": {
+			"parent": "bce5d8d99ef6c06b",
+			"name": "FlightCase_G",
+			"factory": "[assembly:/templates/aspectdummy.aspect]([assembly:/_pro/environment/templates/props/containers/flightcases_a.template?/flightcase_g.entitytemplate].entitytype,[modules:/zspatialsaveaspect.class].entitytype).pc_entitytype",
+			"blueprint": "[assembly:/templates/aspectdummy.aspect]([assembly:/_pro/environment/templates/props/containers/flightcases_a.template?/flightcase_g.entitytemplate].entitytype,[modules:/zspatialsaveaspect.class].entitytype).pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": 0,
+							"y": 0,
+							"z": 1
+						}
+					}
+				},
+				"m_bVisible": {
+					"type": "bool",
+					"value": true
+				},
+				"m_eRoomBehaviour": {
+					"type": "ZSpatialEntity.ERoomBehaviour",
+					"value": "ROOM_DYNAMIC"
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "bce5d8d99ef6c06b",
+					"postInit": true
+				}
+			}
+		},
+		"5953e19ac8a25934": {
+			"parent": "bce5d8d99ef6c06b",
+			"name": "Sound_InteractiveProp",
+			"factory": "[assembly:/templates/sound/customsoundtemplates.template?/sound_interactiveprop.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/templates/sound/customsoundtemplates.template?/sound_interactiveprop.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						}
+					}
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "72091b7500230b1b"
+				},
+				"ActivateDevice_SFX_Event": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "003264CEA3BBD341",
+						"flag": "5F"
+					}
+				},
+				"UniqueDisactivateDeviceEvent": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "006F47285AD0276C",
+						"flag": "5F"
+					}
+				},
+				"m_bOneShotEmitter": {
+					"type": "bool",
+					"value": true
+				}
+			}
+		},
+		"1b58e9171b28f419": {
+			"parent": "bce5d8d99ef6c06b",
+			"name": "Item_BoolSpawned",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint"
+		},
+		"0f3a7ce16368d5b5": {
+			"parent": "bce5d8d99ef6c06b",
+			"name": "AgencyPickup",
+			"factory": "[modules:/zstashpointentity.class].pc_entitytype",
+			"blueprint": "[modules:/zstashpointentity.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": 0,
+							"y": 0,
+							"z": 1.1150000095367432
+						}
+					}
+				},
+				"m_sId": {
+					"type": "ZGuid",
+					"value": "a257fab7-3a28-4d6f-8076-7376542177e7"
+				},
+				"m_bAllowItemPickup": {
+					"type": "bool",
+					"value": false
+				},
+				"m_bUnlockedByDefault": {
+					"type": "bool",
+					"value": false
+				},
+				"m_bHide": {
+					"type": "bool",
+					"value": false
+				},
+				"m_rMockClothbundle": {
+					"type": "SEntityTemplateReference",
+					"value": "b09dbaf05553014e",
+					"postInit": true
+				},
+				"m_rBundlePosition": {
+					"type": "SEntityTemplateReference",
+					"value": "750a98e70b1b8a57",
+					"postInit": true
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "bce5d8d99ef6c06b",
+					"postInit": true
+				}
+			},
+			"events": {
+				"OnReady": {
+					"SetEnabled": ["ebefb241f05b56e1"],
+					"SetVisible": ["72091b7500230b1b"],
+					"SetInPhysicsWorld": ["72091b7500230b1b"]
+				},
+				"OnItemsSpawned": {
+					"SetTrue": ["1b58e9171b28f419"]
+				},
+				"OnOutfitSpawned": {
+					"SetTrue": ["701ca78476d4a7ba"]
+				},
+				"OnPickup": {
+					"SetFalse": ["1b58e9171b28f419", "701ca78476d4a7ba"]
+				}
+			}
+		},
+		"b09dbaf05553014e": {
+			"parent": "bce5d8d99ef6c06b",
+			"name": "Outfit_MockClothbundle",
+			"factory": "[assembly:/_pro/design/gamecore/clothbundles.template?/clothbundle_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/clothbundles.template?/clothbundle_basic.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": -90.00000250447808
+						},
+						"position": {
+							"x": 0.1860000044107437,
+							"y": -0.017999999225139618,
+							"z": 1.0980000495910645
+						},
+						"scale": {
+							"x": 0.9999999999999999,
+							"y": 0.9999999999999999,
+							"z": 1
+						}
+					}
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "bce5d8d99ef6c06b",
+					"postInit": true
+				}
+			}
+		},
+		"750a98e70b1b8a57": {
+			"parent": "bce5d8d99ef6c06b",
+			"name": "Item_SetPieceHelpers_InteractionSpatialsAndGizmos",
+			"factory": "[assembly:/_pro/design/gamecore/setpiecehelpers.template?/setpiecehelpers_interactionspatialsandgizmos.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/setpiecehelpers.template?/setpiecehelpers_interactionspatialsandgizmos.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": -180
+						},
+						"position": {
+							"x": 0,
+							"y": -0.8715940117835999,
+							"z": -1
+						}
+					}
+				},
+				"InteractionPoint": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": 0,
+							"y": -0.6000000238418579,
+							"z": 1.2000000476837158
+						}
+					}
+				},
+				"PromptPoint": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": 0,
+							"y": 0.03999999910593033,
+							"z": 0
+						}
+					}
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "72091b7500230b1b"
+				}
+			}
+		},
+		"faf176626fcf57fe": {
+			"parent": "bce5d8d99ef6c06b",
+			"name": "Outfit_Interaction_Subaction",
+			"factory": "[assembly:/_pro/design/gamecore/interactionbase.template?/interaction_subaction.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/interactionbase.template?/interaction_subaction.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_bApplyPromptDescriptionText": {
+					"type": "bool",
+					"value": false
+				},
+				"m_sPromptText": {
+					"type": "ZString",
+					"value": "Retrieve Items"
+				},
+				"m_sPromptDescriptionText": {
+					"type": "ZString",
+					"value": "Agency Case"
+				},
+				"m_Object": {
+					"type": "SEntityTemplateReference",
+					"value": "0f3a7ce16368d5b5"
+				},
+				"m_bOverrideInteractionRange": {
+					"type": "bool",
+					"value": false
+				},
+				"m_bCanBeOperatedFromAnyAngle": {
+					"type": "bool",
+					"value": false
+				},
+				"m_eActionType": {
+					"type": "EActionType",
+					"value": "AT_STASHPOINT_PICKUP"
+				},
+				"m_rPromptTextResource": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "[assembly:/localization/hitman6/conversations/ui/pro/setpieces.sweetmenutext?/setpieces_localization_prompt_retrieveitems.sweetline].pc_sweetline",
+						"flag": "5F"
+					}
+				},
+				"m_rPromptDescriptionTextResource": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00915E821EF1997B",
+						"flag": "5F"
+					}
+				},
+				"m_RuntimeNetworkResourceID": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "[assembly:/animationnetworks/hitman01/tampering/hm_interact_press_buttons_4_120cm.aln].pc_rtn",
+						"flag": "5F"
+					}
+				},
+				"m_rContextObjectSpatial": {
+					"type": "SEntityTemplateReference",
+					"value": {
+						"ref": "750a98e70b1b8a57",
+						"externalScene": null,
+						"exposedEntity": "InteractionPointSpatial"
+					}
+				},
+				"m_bCanBeOperatedWithItemsInHand": {
+					"type": "bool",
+					"value": false
+				},
+				"m_rContextLocation": {
+					"type": "SEntityTemplateReference",
+					"value": "750a98e70b1b8a57"
+				},
+				"m_aIgnoreCollisionGeom": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["72091b7500230b1b"]
+				},
+				"m_aUIHighlightGeom": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["72091b7500230b1b"]
+				},
+				"m_ConditionList_Visible": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["701ca78476d4a7ba"],
+					"postInit": true
+				},
+				"m_ConditionList_Usable": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["701ca78476d4a7ba"],
+					"postInit": true
+				}
+			},
+			"events": {
+				"Completed": {
+					"EquipOutfit": ["0f3a7ce16368d5b5"]
+				},
+				"AnimEvent_Generic00": {
+					"In": ["0da0cd2e9832d795"],
+					"Open": ["72091b7500230b1b"]
+				},
+				"Started": {
+					"EquipOutfitStarted": ["0f3a7ce16368d5b5"],
+					"Play_Activate_Device_Event": ["5953e19ac8a25934"]
+				}
+			}
+		},
+		"701ca78476d4a7ba": {
+			"parent": "bce5d8d99ef6c06b",
+			"name": "Outfit_BoolSpawned",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint"
+		},
+		"93fed3649e338222": {
+			"parent": "bce5d8d99ef6c06b",
+			"name": "ValueBool_Basic",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_bValue": {
+					"type": "bool",
+					"value": true
+				}
+			}
+		},
+		"ebefb241f05b56e1": {
+			"parent": "bce5d8d99ef6c06b",
+			"name": "PFObstacle",
+			"factory": "[modules:/zpfobstacleentity.class].pc_entitytype",
+			"blueprint": "[modules:/zpfobstacleentity.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": 0.007899999618530273,
+							"y": 0.009406999684870243,
+							"z": 0.21424600481987
+						}
+					}
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "72091b7500230b1b"
+				},
+				"m_vGlobalSize": {
+					"type": "SVector3",
+					"value": {
+						"x": 1.5508400201797485,
+						"y": 0.6735479831695557,
+						"z": 0.57150799036026
+					}
+				}
+			}
+		},
+		"0da0cd2e9832d795": {
+			"parent": "bce5d8d99ef6c06b",
+			"name": "TimerSimple",
+			"factory": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"Delay time (ms)": {
+					"type": "int32",
+					"value": 2000
+				}
+			},
+			"events": {
+				"Out": {
+					"EquipOutfitEnded": ["0f3a7ce16368d5b5"],
+					"Play_Unique_Disactivate_Device_Event": ["5953e19ac8a25934"],
+					"Close": ["72091b7500230b1b"]
+				}
+			}
+		},
+		"841f8e7b4792b843": {
+			"parent": "bce5d8d99ef6c06b",
+			"name": "Item_Interaction_Subaction",
+			"factory": "[assembly:/_pro/design/gamecore/interactionbase.template?/interaction_subaction.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/interactionbase.template?/interaction_subaction.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rContextLocation": {
+					"type": "SEntityTemplateReference",
+					"value": "750a98e70b1b8a57"
+				},
+				"m_bApplyPromptDescriptionText": {
+					"type": "bool",
+					"value": false
+				},
+				"m_sPromptText": {
+					"type": "ZString",
+					"value": "Retrieve Items"
+				},
+				"m_sPromptDescriptionText": {
+					"type": "ZString",
+					"value": "Agency Case"
+				},
+				"m_ConditionList_Usable": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["1b58e9171b28f419"]
+				},
+				"m_bOverrideInteractionRange": {
+					"type": "bool",
+					"value": false
+				},
+				"m_bCanBeOperatedFromAnyAngle": {
+					"type": "bool",
+					"value": false
+				},
+				"m_Object": {
+					"type": "SEntityTemplateReference",
+					"value": "0f3a7ce16368d5b5"
+				},
+				"m_eActionType": {
+					"type": "EActionType",
+					"value": "AT_STASHPOINT_PICKUP"
+				},
+				"m_rContextObjectSpatial": {
+					"type": "SEntityTemplateReference",
+					"value": {
+						"ref": "750a98e70b1b8a57",
+						"externalScene": null,
+						"exposedEntity": "InteractionPointSpatial"
+					}
+				},
+				"m_rPromptTextResource": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "[assembly:/localization/hitman6/conversations/ui/pro/setpieces.sweetmenutext?/setpieces_localization_prompt_retrieveitems.sweetline].pc_sweetline",
+						"flag": "5F"
+					}
+				},
+				"m_rPromptDescriptionTextResource": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00915E821EF1997B",
+						"flag": "5F"
+					}
+				},
+				"m_RuntimeNetworkResourceID": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "[assembly:/animationnetworks/hitman01/tampering/hm_interact_press_buttons_4_120cm.aln].pc_rtn",
+						"flag": "5F"
+					}
+				},
+				"m_ConditionList_Visible": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["1b58e9171b28f419"]
+				},
+				"m_bCanBeOperatedWithItemsInHand": {
+					"type": "bool",
+					"value": true
+				},
+				"m_aIgnoreCollisionGeom": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["72091b7500230b1b"]
+				},
+				"m_aUIHighlightGeom": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["72091b7500230b1b"]
+				}
+			},
+			"events": {
+				"Completed": {
+					"PickupItems": ["0f3a7ce16368d5b5"]
+				},
+				"AnimEvent_Generic00": {
+					"In": ["0da0cd2e9832d795"],
+					"Open": ["72091b7500230b1b"]
+				},
+				"Started": {
+					"Play_Activate_Device_Event": ["5953e19ac8a25934"]
+				}
+			}
+		},
+		"25d604a4222ec568": {
+			"parent": "bce5d8d99ef6c06b",
+			"name": "Outfit_Interaction_MainActionHelper",
+			"factory": "[assembly:/_pro/design/gamecore/interactionbase.template?/interaction_mainactionhelper.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/interactionbase.template?/interaction_mainactionhelper.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						}
+					}
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "750a98e70b1b8a57"
+				},
+				"m_aPromptPositions": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						{
+							"ref": "750a98e70b1b8a57",
+							"externalScene": null,
+							"exposedEntity": "PromptSpatial"
+						}
+					]
+				},
+				"m_bRequiresHitmanFacing": {
+					"type": "bool",
+					"value": false
+				},
+				"m_bWorldAlignPrompt": {
+					"type": "bool",
+					"value": true
+				},
+				"m_bWorldAlignRotateHorizontalOnly": {
+					"type": "bool",
+					"value": false
+				},
+				"m_aSubactions": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["faf176626fcf57fe"]
+				},
+				"m_bVisible": {
+					"type": "bool",
+					"value": false
+				},
+				"m_bRequiresHitmanInFront": {
+					"type": "bool",
+					"value": true
+				},
+				"m_aIgnoreCollisionGeom": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["72091b7500230b1b"]
+				},
+				"m_aUIHighlightGeom": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["72091b7500230b1b"]
+				},
+				"GlowActiveConditions": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["93fed3649e338222"]
+				}
+			}
+		},
+		"2f0d47619131819c": {
+			"parent": "bce5d8d99ef6c06b",
+			"name": "Item_Interaction_MainActionHelper",
+			"factory": "[assembly:/_pro/design/gamecore/interactionbase.template?/interaction_mainactionhelper.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/interactionbase.template?/interaction_mainactionhelper.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						}
+					}
+				},
+				"m_aSubactions": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["841f8e7b4792b843"]
+				},
+				"m_aPromptPositions": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						{
+							"ref": "750a98e70b1b8a57",
+							"externalScene": null,
+							"exposedEntity": "PromptSpatial"
+						}
+					]
+				},
+				"m_bRequiresHitmanFacing": {
+					"type": "bool",
+					"value": false
+				},
+				"m_bWorldAlignPrompt": {
+					"type": "bool",
+					"value": true
+				},
+				"m_bWorldAlignRotateHorizontalOnly": {
+					"type": "bool",
+					"value": false
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "750a98e70b1b8a57"
+				},
+				"m_bVisible": {
+					"type": "bool",
+					"value": false
+				},
+				"m_bRequiresHitmanInFront": {
+					"type": "bool",
+					"value": true
+				},
+				"m_aIgnoreCollisionGeom": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["72091b7500230b1b"]
+				},
+				"m_aUIHighlightGeom": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["72091b7500230b1b"]
+				},
+				"GlowActiveConditions": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["93fed3649e338222"]
+				}
+			}
+		},
+		"e8201a318a909db4": {
+			"parent": "bce5d8d99ef6c06b",
+			"name": "LD_MapTracker_Stashpoint",
+			"factory": "[assembly:/templates/ui/maptrackercontrols.template?/ld_maptracker_stashpoint.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/templates/ui/maptrackercontrols.template?/ld_maptracker_stashpoint.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						}
+					}
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "0f3a7ce16368d5b5"
+				},
+				"m_pStashPoint": {
+					"type": "SEntityTemplateReference",
+					"value": "0f3a7ce16368d5b5"
+				},
+				"m_pHoverDataProvider": {
+					"type": "SEntityTemplateReference",
+					"value": "0f3a7ce16368d5b5"
+				}
+			}
+		},
+		"bce5d8d99ef6c06b": {
+			"parent": null,
+			"name": "SetPiece_AgencyPickup_Case_100cm",
+			"factory": "[modules:/zspatialentity.class].pc_entitytype",
+			"blueprint": "[modules:/zspatialentity.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": 0,
+							"y": 0,
+							"z": 0
+						},
+						"position": {
+							"x": -1.7483010292053223,
+							"y": 0,
+							"z": 0
+						}
+					}
+				},
+				"m_eRoomBehaviour": {
+					"type": "ZSpatialEntity.ERoomBehaviour",
+					"value": "ROOM_DYNAMIC"
+				},
+				"m_sId": {
+					"type": "ZGuid",
+					"value": "a257fab7-3a28-4d6f-8076-7376542177e7"
+				}
+			},
+			"propertyAliases": {
+				"Map_Marker_Offset": [
+					{
+						"originalProperty": "m_mTransform",
+						"originalEntity": "e8201a318a909db4"
+					}
+				],
+				"m_bHide": [
+					{
+						"originalProperty": "m_bHide",
+						"originalEntity": "0f3a7ce16368d5b5"
+					}
+				],
+				"m_bOneShotEmitter": [
+					{
+						"originalProperty": "m_bOneShotEmitter",
+						"originalEntity": "5953e19ac8a25934"
+					}
+				],
+				"m_bUnlockedByDefault": [
+					{
+						"originalProperty": "m_bUnlockedByDefault",
+						"originalEntity": "0f3a7ce16368d5b5"
+					}
+				],
+				"m_sId": [
+					{
+						"originalProperty": "m_sId",
+						"originalEntity": "0f3a7ce16368d5b5"
+					}
+				]
+			},
+			"exposedInterfaces": {
+				"ZStashPointEntity": "0f3a7ce16368d5b5"
+			}
+		}
+	},
+	"propertyOverrides": [],
+	"overrideDeletes": [],
+	"pinConnectionOverrides": [],
+	"pinConnectionOverrideDeletes": [],
+	"externalScenes": [],
+	"subType": "template",
+	"quickEntityVersion": 3.1,
+	"extraFactoryDependencies": [],
+	"extraBlueprintDependencies": [],
+	"comments": []
 }
