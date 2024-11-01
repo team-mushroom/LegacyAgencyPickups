@@ -1,0 +1,126 @@
+{
+    "tempHash": "00F03FD991973F0E",
+    "tbluHash": "009F12A81D1C1380",
+    "patch": [
+        {
+            "SubEntityOperation": [
+                "e211a20b65cfc937",
+                {
+                    "SetFactory": "[assembly:/_pro/design/setpieces/setpieces_agencypickups.template?/setpiece_agencypickup_case_0cm.entitytemplate].pc_entitytype"
+                }
+            ]
+        },
+        {
+            "SubEntityOperation": [
+                "e211a20b65cfc937",
+                {
+                    "SetBlueprint": "[assembly:/_pro/design/setpieces/setpieces_agencypickups.template?/setpiece_agencypickup_case_0cm.entitytemplate].pc_entityblueprint"
+                }
+            ]
+        },
+        {
+            "SubEntityOperation": [
+                "e211a20b65cfc937",
+                {
+                    "SetPropertyValue": {
+                        "property_name": "m_mTransform",
+                        "value": {
+                            "rotation": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 13.834135597333926
+                            },
+                            "position": {
+                                "x": 71.314453125,
+                                "y": -10.27163028717041,
+                                "z": 65.31173706054688
+                            },
+                            "scale": {
+                                "x": 0.9999999999999999,
+                                "y": 0.9999999999999999,
+                                "z": 1
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "SubEntityOperation": [
+                "7224e611c223a059",
+                {
+                    "SetFactory": "[assembly:/_pro/design/setpieces/setpieces_agencypickups.template?/setpiece_agencypickup_case_0cm.entitytemplate].pc_entitytype"
+                }
+            ]
+        },
+        {
+            "SubEntityOperation": [
+                "7224e611c223a059",
+                {
+                    "SetBlueprint": "[assembly:/_pro/design/setpieces/setpieces_agencypickups.template?/setpiece_agencypickup_case_0cm.entitytemplate].pc_entityblueprint"
+                }
+            ]
+        },
+        {
+            "SubEntityOperation": [
+                "7224e611c223a059",
+                {
+                    "SetPropertyValue": {
+                        "property_name": "m_mTransform",
+                        "value": {
+                            "rotation": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 90
+                            },
+                            "position": {
+                                "x": 118.94319915771484,
+                                "y": -65.72322845458984,
+                                "z": 44.49620056152344
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "SubEntityOperation": [
+                "40e835a262aa1111",
+                {
+                    "SetFactory": "[assembly:/_pro/design/setpieces/setpieces_agencypickups.template?/setpiece_agencypickup_case_0cm.entitytemplate].pc_entitytype"
+                }
+            ]
+        },
+        {
+            "SubEntityOperation": [
+                "40e835a262aa1111",
+                {
+                    "SetBlueprint": "[assembly:/_pro/design/setpieces/setpieces_agencypickups.template?/setpiece_agencypickup_case_0cm.entitytemplate].pc_entityblueprint"
+                }
+            ]
+        },
+        {
+            "SubEntityOperation": [
+                "40e835a262aa1111",
+                {
+                    "SetPropertyValue": {
+                        "property_name": "m_mTransform",
+                        "value": {
+                            "rotation": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 90
+                            },
+                            "position": {
+                                "x": 88.96280670166016,
+                                "y": -61.00318145751953,
+                                "z": 65.29718017578125
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    ],
+    "patchVersion": 6
+}

@@ -1,9 +1,22 @@
 {
-	"$schema": "https://raw.githubusercontent.com/atampy25/simple-mod-framework/main/Mod%20Manager/src/lib/manifest-schema.json",
-	"version": "0.1.0",
-	"id": "YourPreferredAlias.AnIDForTheMod",
-	"name": "Test Mod",
-	"description": "A truly amazing mod",
-	"authors": ["Your Preferred Alias"],
-	"frameworkVersion": "2.25.1"
+	"version": "1.0.0",
+	"id": "muddye.LegacyAgencyPickups",
+	"name": "Legacy Agency Pickups",
+	"description": "Restores the original Agency Pickup flight cases for the 2016 levels. Replaces the briefcases added in HITMAN 2.",
+	"authors": [
+		"muddye",
+		"musicalmushr00m"
+	],
+	"frameworkVersion": "2.0.0",
+	"contentFolders": [
+		"content"
+	],
+	"dependencies": [
+		{
+			"runtimeID": "002E19E82254FA69"
+		},
+		{
+			"runtimeID": "00564FE7080BA679"
+		}
+	]
 }

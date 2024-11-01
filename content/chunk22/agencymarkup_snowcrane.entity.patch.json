@@ -1,0 +1,164 @@
+{
+    "tempHash": "001ECC9279457547",
+    "tbluHash": "0047BA95BA849796",
+    "patch": [
+        {
+            "SubEntityOperation": [
+                "c20fb0b6d035a30e",
+                {
+                    "SetFactory": "[assembly:/_pro/design/setpieces/setpieces_agencypickups.template?/setpiece_agencypickup_case_0cm.entitytemplate].pc_entitytype"
+                }
+            ]
+        },
+        {
+            "SubEntityOperation": [
+                "c20fb0b6d035a30e",
+                {
+                    "SetBlueprint": "[assembly:/_pro/design/setpieces/setpieces_agencypickups.template?/setpiece_agencypickup_case_0cm.entitytemplate].pc_entityblueprint"
+                }
+            ]
+        },
+        {
+            "SubEntityOperation": [
+                "c20fb0b6d035a30e",
+                {
+                    "SetPropertyValue": {
+                        "property_name": "m_mTransform",
+                        "value": {
+                            "rotation": {
+                                "x": 0,
+                                "y": 0,
+                                "z": -45
+                            },
+                            "position": {
+                                "x": -49.73561096191406,
+                                "y": 34.08148956298828,
+                                "z": -4.87613582611084
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "SubEntityOperation": [
+                "d50c6d0b0b88da97",
+                {
+                    "SetFactory": "[assembly:/_pro/design/setpieces/setpieces_agencypickups.template?/setpiece_agencypickup_case_0cm.entitytemplate].pc_entitytype"
+                }
+            ]
+        },
+        {
+            "SubEntityOperation": [
+                "d50c6d0b0b88da97",
+                {
+                    "SetBlueprint": "[assembly:/_pro/design/setpieces/setpieces_agencypickups.template?/setpiece_agencypickup_case_0cm.entitytemplate].pc_entityblueprint"
+                }
+            ]
+        },
+        {
+            "SubEntityOperation": [
+                "d50c6d0b0b88da97",
+                {
+                    "SetPropertyValue": {
+                        "property_name": "m_mTransform",
+                        "value": {
+                            "rotation": {
+                                "x": 0,
+                                "y": 0,
+                                "z": -45
+                            },
+                            "position": {
+                                "x": -118.13990020751953,
+                                "y": 22.40176010131836,
+                                "z": -4.865785121917725
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "SubEntityOperation": [
+                "a4eb1c065ceaf8a1",
+                {
+                    "SetFactory": "[assembly:/_pro/design/setpieces/setpieces_agencypickups.template?/setpiece_agencypickup_case_0cm.entitytemplate].pc_entitytype"
+                }
+            ]
+        },
+        {
+            "SubEntityOperation": [
+                "a4eb1c065ceaf8a1",
+                {
+                    "SetBlueprint": "[assembly:/_pro/design/setpieces/setpieces_agencypickups.template?/setpiece_agencypickup_case_0cm.entitytemplate].pc_entityblueprint"
+                }
+            ]
+        },
+        {
+            "SubEntityOperation": [
+                "a4eb1c065ceaf8a1",
+                {
+                    "SetPropertyValue": {
+                        "property_name": "m_mTransform",
+                        "value": {
+                            "rotation": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 134.99975851642336
+                            },
+                            "position": {
+                                "x": -81.6801528930664,
+                                "y": 67.23043060302734,
+                                "z": -0.4658310115337372
+                            },
+                            "scale": {
+                                "x": 1.0000000000000002,
+                                "y": 1.0000000000000002,
+                                "z": 1
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "SubEntityOperation": [
+                "95c2b16147fe0074",
+                {
+                    "SetFactory": "[assembly:/_pro/design/setpieces/setpieces_agencypickups.template?/setpiece_agencypickup_case_0cm.entitytemplate].pc_entitytype"
+                }
+            ]
+        },
+        {
+            "SubEntityOperation": [
+                "95c2b16147fe0074",
+                {
+                    "SetBlueprint": "[assembly:/_pro/design/setpieces/setpieces_agencypickups.template?/setpiece_agencypickup_case_0cm.entitytemplate].pc_entityblueprint"
+                }
+            ]
+        },
+        {
+            "SubEntityOperation": [
+                "95c2b16147fe0074",
+                {
+                    "SetPropertyValue": {
+                        "property_name": "m_mTransform",
+                        "value": {
+                            "rotation": {
+                                "x": 0,
+                                "y": 0,
+                                "z": -13.594392840149819
+                            },
+                            "position": {
+                                "x": -20.253339767456055,
+                                "y": 104.78299713134766,
+                                "z": 23.370059967041016
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    ],
+    "patchVersion": 6
+}

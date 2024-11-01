@@ -1,0 +1,83 @@
+{
+    "tempHash": "00989505092D32CC",
+    "tbluHash": "00DFADB63EC156A2",
+    "patch": [
+        {
+            "SubEntityOperation": [
+                "2c488543f03ea20f",
+                {
+                    "SetFactory": "[assembly:/_pro/design/setpieces/setpieces_agencypickups.template?/setpiece_agencypickup_case_0cm.entitytemplate].pc_entitytype"
+                }
+            ]
+        },
+        {
+            "SubEntityOperation": [
+                "2c488543f03ea20f",
+                {
+                    "SetBlueprint": "[assembly:/_pro/design/setpieces/setpieces_agencypickups.template?/setpiece_agencypickup_case_0cm.entitytemplate].pc_entityblueprint"
+                }
+            ]
+        },
+        {
+            "SubEntityOperation": [
+                "2c488543f03ea20f",
+                {
+                    "SetPropertyValue": {
+                        "property_name": "m_mTransform",
+                        "value": {
+                            "rotation": {
+                                "x": 0,
+                                "y": 0,
+                                "z": -180
+                            },
+                            "position": {
+                                "x": 7.09171199798584,
+                                "y": -150.1522979736328,
+                                "z": -3.999710083007813
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "SubEntityOperation": [
+                "a4e4381732a27945",
+                {
+                    "SetFactory": "[assembly:/_pro/design/setpieces/setpieces_agencypickups.template?/setpiece_agencypickup_case_0cm.entitytemplate].pc_entitytype"
+                }
+            ]
+        },
+        {
+            "SubEntityOperation": [
+                "a4e4381732a27945",
+                {
+                    "SetBlueprint": "[assembly:/_pro/design/setpieces/setpieces_agencypickups.template?/setpiece_agencypickup_case_0cm.entitytemplate].pc_entityblueprint"
+                }
+            ]
+        },
+        {
+            "SubEntityOperation": [
+                "a4e4381732a27945",
+                {
+                    "SetPropertyValue": {
+                        "property_name": "m_mTransform",
+                        "value": {
+                            "rotation": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 82.59870332615237
+                            },
+                            "position": {
+                                "x": 184.28770446777344,
+                                "y": 15.429140090942385,
+                                "z": -0.7999590039253235
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    ],
+    "patchVersion": 6
+}
